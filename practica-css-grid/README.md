@@ -83,3 +83,52 @@ Cada elemento dentro del grid tiene una clase (`.a`, `.b`, `.c`, `.d`) que defin
 
 ¡Experimenta y combina estas técnicas para crear layouts modernos y flexibles!
 
+---
+
+## Práctica Complementaria: Invertir el Grid
+
+A continuación, te proponemos un ejercicio para reforzar tu aprendizaje: **invierte la disposición de las cajas en el grid** para que el resultado sea como el de la imagen proporcionada, donde la caja 1 ocupa toda la primera columna, las cajas 2 y 3 están en la parte superior derecha y la caja 4 ocupa la parte inferior derecha.
+
+### Instrucciones
+1. Modifica el HTML para que las cajas tengan las clases `a`, `b`, `c` y `d`.
+2. Cambia el CSS Grid para lograr la siguiente disposición:
+   - Caja 1 (rosada): columna 1, filas 1 y 2 (vertical).
+   - Caja 2 (azul): columna 2, fila 1.
+   - Caja 3 (azul): columna 3, fila 1.
+   - Caja 4 (verde): columnas 2 y 3, fila 2 (horizontal).
+
+### Ejemplo de CSS para la práctica
+```css
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+.a {
+  background-color: pink;
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
+.b {
+  background-color: #c5dcec;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.c {
+  background-color: #c5dcec;
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+.d {
+  background-color: #b7eca7;
+  grid-column: 2 / 4;
+  grid-row: 2 / 3;
+}
+```
+
+### Reto
+- Intenta lograr el mismo resultado usando `grid-template-areas` para practicar otra forma de organizar el grid.
+
+¡Pon a prueba tus conocimientos y experimenta con las propiedades de CSS Grid!
+
