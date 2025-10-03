@@ -1,0 +1,43 @@
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 150px);
+  gap: 10px;
+  width: 600px;
+  height: auto;
+}
+
+/* Styling for individual grid items */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 36px;
+  color: black;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+.a {
+  background-color: pink;
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+
+.b {
+  background-color: lightblue;
+  grid-column: 3 / 4;
+  grid-row: 1 / 3;
+}
+
+.c {
+  background-color: lightblue;
+  grid-column: 1 / 2;
+  grid-row: 2;
+}
+
+.d {
+  background-color: lightgreen;
+  grid-column: 2;
+  grid-row: 2;
+}
